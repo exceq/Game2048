@@ -32,6 +32,8 @@ namespace Game2048_console
                     case ConsoleKey.RightArrow:
                         game.MoveRight();
                         break;
+                    case ConsoleKey.Escape:
+                        return;
 
                 }
         }

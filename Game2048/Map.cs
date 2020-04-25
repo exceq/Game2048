@@ -4,7 +4,15 @@ using System.Text;
 
 namespace Game2048_console
 {
-    class Class1
+    class Map
     {
+        int[,] map;
+        int size;
+
+        public Map(int size)
+        {
+            this.size = size;
+            map = new int[size, size];
+        }
     }
 }

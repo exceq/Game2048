@@ -694,11 +694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mrmis\\Desktop\\Попка\\Visual Studio\\Game2048_console\\Game2048_console.csproj",
+      "projectUniqueName": "F:\\Desktop\\Попка\\Visual Studio\\Game2048\\Game2048\\Game2048_console.csproj",
       "projectName": "Game2048_console",
-      "projectPath": "C:\\Users\\mrmis\\Desktop\\Попка\\Visual Studio\\Game2048_console\\Game2048_console.csproj",
+      "projectPath": "F:\\Desktop\\Попка\\Visual Studio\\Game2048\\Game2048\\Game2048_console.csproj",
       "packagesPath": "C:\\Users\\mrmis\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mrmis\\Desktop\\Попка\\Visual Studio\\Game2048_console\\obj\\",
+      "outputPath": "F:\\Desktop\\Попка\\Visual Studio\\Game2048\\Game2048\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

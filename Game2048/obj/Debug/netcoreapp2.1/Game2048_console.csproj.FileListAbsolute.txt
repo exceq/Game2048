@@ -1,0 +1,11 @@
+F:\Desktop\Попка\Visual Studio\Game2048\Game2048\obj\Debug\netcoreapp2.1\Game2048_console.csprojAssemblyReference.cache
+F:\Desktop\Попка\Visual Studio\Game2048\Game2048\obj\Debug\netcoreapp2.1\Game2048_console.csproj.CoreCompileInputs.cache
+F:\Desktop\Попка\Visual Studio\Game2048\Game2048\obj\Debug\netcoreapp2.1\Game2048_console.AssemblyInfoInputs.cache
+F:\Desktop\Попка\Visual Studio\Game2048\Game2048\obj\Debug\netcoreapp2.1\Game2048_console.AssemblyInfo.cs
+F:\Desktop\Попка\Visual Studio\Game2048\Game2048\bin\Debug\netcoreapp2.1\Game2048_console.deps.json
+F:\Desktop\Попка\Visual Studio\Game2048\Game2048\bin\Debug\netcoreapp2.1\Game2048_console.runtimeconfig.json
+F:\Desktop\Попка\Visual Studio\Game2048\Game2048\bin\Debug\netcoreapp2.1\Game2048_console.runtimeconfig.dev.json
+F:\Desktop\Попка\Visual Studio\Game2048\Game2048\bin\Debug\netcoreapp2.1\Game2048_console.dll
+F:\Desktop\Попка\Visual Studio\Game2048\Game2048\bin\Debug\netcoreapp2.1\Game2048_console.pdb
+F:\Desktop\Попка\Visual Studio\Game2048\Game2048\obj\Debug\netcoreapp2.1\Game2048_console.dll
+F:\Desktop\Попка\Visual Studio\Game2048\Game2048\obj\Debug\netcoreapp2.1\Game2048_console.pdb

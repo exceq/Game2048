@@ -18,7 +18,7 @@ namespace Game2048_console
             while (true)
             {
                 Show(game);
-                switch(Console.ReadKey(false).Key)
+                switch (Console.ReadKey(false).Key)
                 {
                     case ConsoleKey.UpArrow:
                         game.MoveUp();
@@ -36,15 +36,20 @@ namespace Game2048_console
                         return;
 
                 }
+            }
         }
 
-        static void Show(Game game)
+        void Show(Game game)
         {
-                /* for y
-                 *      for x
-                 *      setcursor
-                 *      write Value
-                 *      */
-        }
+            Console.SetWindowSize(30, 20);
+            for (int y = 0; y < game.Size; y++)
+                for (int x = 0; x < game.Size; x++)
+                {
+                    Console.SetCursorPosition(x * 5+5, y * 2+2);
+                    int value = game.GetValueFromMap(x, y);
+                    Console.WriteLine(value != 0 ? value.ToString()+"   " : ".    ");
+                }
+            Console.WriteLine();
+        }  
     }
 }

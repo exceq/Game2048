@@ -34,7 +34,6 @@ namespace Game2048_console
                         break;
                     case ConsoleKey.Escape:
                         return;
-
                 }
             }
         }
@@ -45,11 +44,12 @@ namespace Game2048_console
             for (int y = 0; y < game.Size; y++)
                 for (int x = 0; x < game.Size; x++)
                 {
-                    Console.SetCursorPosition(x * 5+5, y * 2+2);
+                    Console.SetCursorPosition(x * 5 + 2, y * 2 + 1);
                     int value = game.GetValueFromMap(x, y);
-                    Console.WriteLine(value != 0 ? value.ToString()+"   " : ".    ");
+                    Console.WriteLine(value != 0?value.ToString()+"  ":".   ");
                 }
             Console.WriteLine();
+            Console.WriteLine(game.GameIsEnd? "Game over": "Still play");
         }  
     }
 }

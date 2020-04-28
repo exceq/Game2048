@@ -6,12 +6,12 @@ namespace Game2048_console
 {
     class Map
     {
-        int[,] map;
-        public int size { get; private set; }
+        private int[,] map;
+        public int Size { get; private set; }
 
         public Map(int size)
         {
-            this.size = size;
+            Size = size;
             map = new int[size, size];
         }
 
@@ -28,8 +28,8 @@ namespace Game2048_console
 
         public bool IsCorrectPosition(int x, int y)
         {
-            return x < size && x >= 0 &&
-                   y < size && y >= 0;
+            return x < Size && x >= 0 &&
+                   y < Size && y >= 0;
         }
     }
 }

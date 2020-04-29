@@ -40,7 +40,7 @@ namespace Game2048_console
 
         void Show(Game game)
         {
-            Console.SetWindowSize(30, 20);
+            Console.SetWindowSize(game.Size * 6, game.Size * 3);
             for (int y = 0; y < game.Size; y++)
                 for (int x = 0; x < game.Size; x++)
                 {
@@ -49,7 +49,7 @@ namespace Game2048_console
                     Console.WriteLine(value != 0?value.ToString()+"  ":".   ");
                 }
             Console.WriteLine();
-            Console.WriteLine(game.GameIsEnd? "Game over": "Still play");
+            Console.WriteLine(game.GameIsEnd() ? "Game over " : "Still play");
         }  
     }
 }

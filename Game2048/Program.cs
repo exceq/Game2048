@@ -49,6 +49,7 @@ namespace Game2048_console
                     Console.WriteLine(value != 0?value.ToString()+"  ":".   ");
                 }
             Console.WriteLine();
+            Console.WriteLine("Счет: " + game.Sum);
             Console.WriteLine(game.GameIsEnd() ? "Game over " : "Still play");
         }  
     }

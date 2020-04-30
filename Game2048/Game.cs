@@ -8,7 +8,9 @@ namespace Game2048_console
     {
         public bool gameIsEnd { get; private set; }
         public int Size { get { return map.Size; } }
+        public int Sum { get; private set; }
 
+        private int countZero = 0;
         private bool wasMoveTo = false;
         private Random rnd = new Random();
         private Map map;  
@@ -20,6 +22,7 @@ namespace Game2048_console
 
         public void Start()
         {
+            countZero = Size * Size;
             gameIsEnd = false;
             for (int x = 0; x < Size; x++)
                 for (int y = 0; y < Size; y++)
@@ -38,6 +41,7 @@ namespace Game2048_console
                 if (map.GetValue(x, y) == 0)
                 {
                     map.SetValue(x, y, rnd.Next(1, 3) * 2);
+                    countZero--;
                     return;
                 }
             }
@@ -61,7 +65,9 @@ namespace Game2048_console
             if (map.GetValue(x, y) > 0)
                 if (map.GetValue(x + dx, y + dy) == map.GetValue(x, y))
                 {
-                    map.SetValue(x + dx, y + dy, map.GetValue(x, y) * 2);
+                    int number = map.GetValue(x, y);
+                    map.SetValue(x + dx, y + dy, number * 2);
+                    Sum += number*2;
                     while (map.GetValue(x - dx, y - dy) > 0)
                     {                       
                         map.SetValue(x, y, map.GetValue(x - dx, y - dy));
@@ -69,6 +75,7 @@ namespace Game2048_console
                         y -= dy;
                     }
                     wasMoveTo = true;
+                    countZero++;
                     map.SetValue(x, y, 0);
                 }
         }
@@ -138,9 +145,11 @@ namespace Game2048_console
         {
             if (gameIsEnd)
                 return gameIsEnd;
+            if (countZero != 0)
+                return false;
             for (int x = 0; x < Size; x++)
                 for (int y = 0; y < Size; y++)
-                    if (map.GetValue(x, y) == 0 ||
+                    if (//map.GetValue(x, y) == 0 ||
                         map.GetValue(x, y) == map.GetValue(x + 1, y) ||
                         map.GetValue(x, y) == map.GetValue(x, y + 1))
                         return false;
